@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav.menu {
+  background-color: aqua;
+  text-align: center;
+}
+/* tüm ul ler ve 1.seviye ul yanayana getir*/
+nav.menu ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav.menu > ul li {
+  position: relative;
+}
+
+/*2.seviye menuler ul ler ******** */
+
+nav.menu > ul > li ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  text-align: left;
+  padding: 0;
+  width: 150px;
+}
+
+/* 3. ve sonraki seviye menüleri yana açtırmak için*/
+nav.menu > ul li > ul > li ul li {
+  left: 150px;
+  top: 0;
+}
+/*Tüm a tagları için*/
+nav.menu a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+}
+/*li lere hover verince çocuğu olan ul yi göstermek için*/
+nav.menu li:hover > ul {
+  display: inline-block;
+}
+/*ilk seviye li ler*/
+nav.menu > ul > li {
+  background-color: yellow;
+}
+nav.menu > ul > li:hover > a {
+  color: white;
+}
+/*diğer seviye a taglarına hover olunca */
+nav.menu > ul > li li a:hover {
+  background-color: var(--color2);
+}
