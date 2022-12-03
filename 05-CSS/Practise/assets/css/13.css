@@ -5,8 +5,9 @@
 }
 
 nav.menu {
-  background-color: aqua;
+  background-color: coral;
   text-align: center;
+  border: 1px solid chartreuse;
 }
 /* tüm ul ler ve 1.seviye ul yanayana getir*/
 nav.menu ul {
@@ -19,6 +20,7 @@ nav.menu ul {
 
 nav.menu > ul li {
   position: relative;
+  background-color: chartreuse;
 }
 
 /*2.seviye menuler ul ler ******** */
